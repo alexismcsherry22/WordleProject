@@ -24,7 +24,7 @@ public class WordleSetUp {
 	private void GenerateWord() throws FileNotFoundException {
 		JSONParser parser = new JSONParser();
 		FileReader fileReader;
-		File file = new File("D:/Alexis Nology-Forte/Eclipse Workplace/Wordle/src/Word-List.json");
+		File file = new File("D:/Alexis Nology-Forte/Eclipse Workplace/WordleProject/Wordle/src/Word-List.json");
 		
 		try {
 			fileReader = new FileReader(file);
