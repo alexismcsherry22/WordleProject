@@ -43,6 +43,13 @@ public class Main {
 			if(user.guess.length() > 5) {
 				System.out.println("Must be 5 letters");
 			}
+			//Check if the user has entered only text,
+			//else tell the user it should only be letters
+			if(user.guess.matches("[a-z]")) {
+				continue;
+			} else {
+				System.out.println("Guess can only be letters");
+			}
 				
 			//If the user guesses correctly, reward text and end game
 			if(user.guess.equals(word.answer)) {
